@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "676524352562",
+    "project_id": "talkvision-25a5a",
+    "storage_bucket": "talkvision-25a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676524352562:android:d2d87231a15e2dc24c882b",
+        "android_client_info": {
+          "package_name": "com.talkvision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676524352562-okggee14fr4fhg4c9ip5apaac7iugsvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.talkvision",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "676524352562-kp0us35vltk7fit5hn5dpumk424bu7u4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJECxt16LkgzcW79sE_sIi98826XQZLS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676524352562-kp0us35vltk7fit5hn5dpumk424bu7u4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
