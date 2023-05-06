@@ -5,6 +5,7 @@ import { useAppDispatch } from './src/app/hooks';
 import { hideTab, showTab } from './src/features/tabSlicer';
 import { useRecentPicksPersistence } from 'rn-emoji-keyboard';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { fcmMessage } from './src/utils/firebase';
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -17,6 +18,7 @@ const App = () => {
       dispatch(showTab());
     }
   }
+  fcmMessage();
   useRecentPicksPersistence({
     initialization: () => AsyncStorage.getItem("emoji").then((item) => JSON.parse(item || '[]')),
     onStateChange: (next) => AsyncStorage.setItem("emoji", JSON.stringify(next)),

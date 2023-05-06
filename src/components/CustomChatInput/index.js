@@ -12,9 +12,13 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import { colors } from "../../theme/colors";
 import { IconButton } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
+import { Recorder } from "@react-native-community/audio-toolkit";
 
 const CustomChatInput = ({ reply, closeReply, isLeft, username, message, setMessage, showEmojiPicker, setShowEmojiPicker }) => {
     const navigation = useNavigation();
+    const recordAudio = () => {
+        
+    }
     return (
         <View style={styles.container}>
             {reply ? (
@@ -71,6 +75,7 @@ const CustomChatInput = ({ reply, closeReply, isLeft, username, message, setMess
                     icon={message ? "send" : "microphone"}
                     size={28}
                     iconColor={colors.background}
+                    onPress={recordAudio}
                     containerColor={colors.primary}
                 />
             </View>

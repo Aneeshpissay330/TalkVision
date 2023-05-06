@@ -41,12 +41,14 @@ const ChatMessage = () => {
     return (
         <View style={{ backgroundColor: theme.colors.background, flex: 1 }}>
             <ScrollView style={{ flex: 1 }}>
-                <CustomChatBubble 
-                    isLeft
-                    text="Hello"
-                />
                 <CustomChatBubble
-                    text="Hi"
+                    files={["https://res.cloudinary.com/aneeshpissay330/video/upload/v1682325218/ForBiggerJoyrides_shob1h.mp4"]}
+                />
+                <CustomChatBubble 
+                    files={["https://res.cloudinary.com/aneeshpissay330/video/upload/v1682492137/file_example_MP3_5MG_yr85iu.mp3"]}
+                />
+                <CustomChatBubble 
+                    files={["https://www.africau.edu/images/default/sample.pdf"]}
                 />
             </ScrollView>
             <CustomChatInput 
@@ -55,10 +57,6 @@ const ChatMessage = () => {
                 showEmojiPicker={showEmojiPicker}
                 setShowEmojiPicker={setShowEmojiPicker}
             />
-            {/* <TextInput 
-                placeholder="Enter message"
-                placeholderTextColor={colors.primary}
-            /> */}
             {showEmojiPicker && <CustomEmojiKeyboard handlePickEmoji={handlePickEmoji} />}
         </View>
     )
